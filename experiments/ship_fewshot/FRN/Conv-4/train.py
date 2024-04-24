@@ -9,18 +9,10 @@ from datasets import dataloaders
 
 from models.RIFCRN import FRN
 args = trainer.train_parser()
-'''
-with open('D:\\few_shot_classification\\FRN\\config.yml', 'r') as f:
-    temp = yaml.safe_load(f)
-data_path = os.path.abspath(temp['data_path'])
-print(data_path)
-fewshot_path = os.path.join(data_path,'mini-ImageNet')
-'''
-#print(fewshot_path)
+
+
 fewshot_path='/opt/data_3/lyf/FRN/data/ship'
-#fewshot_path='/opt/data_3/lyf/FRN/data/WHU'
-#fewshot_path='/opt/data_3/lyf/FRN/data/Aircraft_fewshot'
-#fewshot_path='/opt/data_3/lyf/FRN/data/CUB_200_2011/CUB_fewshot_cropped'
+
 pm = trainer.Path_Manager(fewshot_path=fewshot_path,args=args)
 
 train_way = args.train_way
