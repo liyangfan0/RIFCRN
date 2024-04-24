@@ -8,3 +8,7 @@ mmcv-full 1.4.8
 Python 3.7
 
 ## Running
+Take CUB datasets for example
+
+cd experiments/CUB_fewshot_cropped/FRN/Conv-4
+python train.py
