@@ -11,4 +11,7 @@ Python 3.7
 Take CUB datasets for example
 
 cd experiments/CUB_fewshot_cropped/FRN/Conv-4
+
+Then running 
+
 python train.py
