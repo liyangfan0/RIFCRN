@@ -32,8 +32,8 @@ def meta_test(data_path,model,way,shot,pre,transform_type,query_shot,trial=10000
     for i, (inp,_) in tqdm(enumerate(eval_loader)):
         
         inp = inp.cuda()
-        #max_index = model.meta_test(inp,way=way,shot=shot,query_shot=query_shot,test_mode=True)
-        max_index = model.meta_test(inp,way=way,shot=shot,query_shot=query_shot)
+        max_index = model.meta_test(inp,way=way,shot=shot,query_shot=query_shot,test_mode=True)
+       
         
         acc = 100*torch.sum(torch.eq(max_index,target)).item()/query_shot/way
         acc_list.append(acc)
