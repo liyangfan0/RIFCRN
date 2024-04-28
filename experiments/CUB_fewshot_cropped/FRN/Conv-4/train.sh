@@ -4,11 +4,11 @@ python train.py \
     --lr 1e-3 \
     --gamma 1e-1 \
     --epoch 400 \
-    --stage 2 \
-    --val_epoch 20 \
+    --stage 1 \
+    --val_epoch 10 \
     --weight_decay 5e-4 \
     --nesterov \
-    --train_way 20 \
+    --train_way 5 \
     --train_shot 5 \
     --train_transform_type 0 \
     --test_shot 1 5 \
