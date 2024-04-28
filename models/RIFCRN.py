@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from models.backbones import Conv_4,ResNet
+from models.backbones import Conv_4
 from torchvision.utils import save_image
 import torchvision.utils as vutils
 import os
