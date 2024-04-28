@@ -19,7 +19,7 @@ Password: pnjw
 
 
 ## Running
-Taking CUB datasets for example
+Taking CUB datasets for example:
 
 cd experiments/CUB_fewshot_cropped/FRN/Conv-4
 
