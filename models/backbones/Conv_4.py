@@ -47,10 +47,10 @@ class BackBone(nn.Module):
         self.or_pool = RotationInvariantPooling(256, 8)
     def forward(self,inp):
         feat=self.layers(inp)
-        #or_feat=self.or_conv(feat)
-        #or_feat=self.or_pool(or_feat)
+        or_feat=self.or_conv(feat)
+        or_feat=self.or_pool(or_feat)
         
-        return feat
+        return or_feat
 if __name__ == '__main__':
 
     model = BackBone()
